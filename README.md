@@ -3,7 +3,23 @@
 프로젝트를 진행할때 기본으로 셋팅하는 폴더을 생성하고, 업무진행에 필요한 LESS , SCSS(SASS) , javascript (ES2015) 을 기본 컴파일 합니다.
 Gulp 베이스로 실행됩니다.
 
-### Markdown
+### 필요프로그램
+- nodejs
+
+### Install (npm)
+'''
+> npm install
+> gulp generator
+'''
+
+### Task (Gulp)
+
+
+Task명(Gulp) | 비고
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
