@@ -7,17 +7,17 @@ Gulp 베이스로 실행됩니다.
 - nodejs
 
 ### Install (npm)
-'''
+```sh
 > npm install
 > gulp generator
-'''
+```
 
 ### Task (Gulp)
 
 
 Task명(Gulp) | 비고
 ------------ | -------------
-Content from cell 1 | Content from cell 2
+generator | 
 Content in the first column | Content in the second column
 
 
