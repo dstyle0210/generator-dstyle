@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## Generator Dstyle (generator-dstyle)
 
-You can use the [editor on GitHub](https://github.com/dstyle0210/generator-dstyle/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+프로젝트를 진행할때 기본으로 셋팅하는 폴더을 생성하고, 업무진행에 필요한 LESS , SCSS(SASS) , javascript (ES2015) 을 기본 컴파일 합니다.
+Gulp 베이스로 실행됩니다.
 
 ### Markdown
 
