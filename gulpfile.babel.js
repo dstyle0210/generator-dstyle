@@ -33,22 +33,18 @@ import replace from "gulp-replace";
 import csso from "gulp-csso";
 import csscomb from "gulp-csscomb";
 import run from "run-sequence";
-import babel from "gulp-babel";
 
-const templates = "https://dstyle0210.github.io/generator-dstyle/templates/";
+const templates = "https://dstyle0210.github.io/generator-dstyle/templates";
 const src = {
     root:"./src",
     css:"./src/css",
-    js:"./src/js",
-    lib:"./src/js/lib",
-    app:"./src/js/app"
+    lib:"./src/js/lib"
 };
 const resources = { // resources
     root:"./src/resources",
     css:"./src/resources/css",
     less:"./src/resources/less",
     scss:"./src/resources/scss",
-    js:"./src/resources/js",
     app:"./src/resources/js/app"
 };
 let downloadPromise = []; // 리소스 다운로드에 사용되는 Promise Array
@@ -133,8 +129,8 @@ gulp.task("css",function(){
     });
 });
 
-gulp.task("yeoman",["yeoman:5"],() => { });
-gulp.task("yeoman:5",["mkdir"],() => {
+gulp.task("generator",["generator:5"],() => { });
+gulp.task("generator:5",["mkdir"],() => {
     request({
         url:templates+"/html5.html"
 },function(err,res,html){
@@ -146,7 +142,7 @@ gulp.task("yeoman:5",["mkdir"],() => {
 // 리소스 다운로드 시작.
 run("download");
 });
-gulp.task("yeoman:xt",["mkdir"],() => {
+gulp.task("generator:xt",["mkdir"],() => {
     request({
         url:templates+"/xhtml.html"
 },function(err,res,html){
@@ -203,7 +199,7 @@ Promise.all(downloadPromise).then(function (values) {
 
 // 리소스 다운로드
 function download(file,path){
-    var url = "https://dstyle0210.github.io/dsPack/template/"+file;
+    var url = templates+"/"+file;
     var path = path+"/"+file;
     return new Promise(function (resolve, reject) {
         request({
@@ -217,16 +213,7 @@ function download(file,path){
     });
 };
 
-gulp.task("js",function(){
-    return pipeLineJS( gulp.src(resources.app+"/*.js") , src.app );
-});
-
 /*! Function */
-function pipeLineJS(gulpFile , dest){
-    return gulpFile
-        .pipe(babel({presets:["es2015"]}))
-        .pipe(gulp.dest(dest))
-};
 function pipeLineLess(gulpFile , dest){
     return gulpFile.pipe(less())
         .pipe(csscomb("./zen.json"))
