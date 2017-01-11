@@ -83,4 +83,7 @@ XHTML을 기반으로 하여 template.html 파일을 생성합니다. 기초 템
 > gulp css:concat
 ```
 리소스 폴더의 css 폴더 안의 각 폴더 내 css들을 병합하여 폴더명.css 파일로 저장합니다.
-
+```
+> gulp css:dist
+```
+리소스 폴더의 css 들을 병합하고(css:concat) dist 폴더로 복사합니다.
