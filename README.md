@@ -14,6 +14,8 @@ Gulp 베이스로 실행됩니다.
 
 ### Task (Gulp)
 
+[TASKS 참조](https://github.com/dstyle0210/generator-dstyle/blob/gh-pages/docs/TASKS.md)
+
 Task Name | Task Deps | Comment
 ------------ | -------------| -------------
 default | less , scss , css | 생성된 구조에서 CSS 및 Javascript의 변화를 추적하여 컴파일합니다.
@@ -26,7 +28,7 @@ less:build | - | less 파일들을 컴파일합니다.
 scss | scss:build , scss:watch | scss 파일들을 컴파일 하고, 감지하기 시작합니다.
 scss:watch | - | scss 파일의 변화를 추적하여 컴파일 합니다.
 scss:build | - | scss 파일들을 컴파일 합니다.
-css | css:build , css:watch | 각폴더내의 css 파일들을 폴더이름으로 병합 하고, 변화를 감지합니다.
+css | css:build , css:watch | 각 폴더내의 css 파일들을 폴더이름으로 병합 하고, 변화를 감지합니다.
 css:watch | - | css 파일의 변화를 추적하여 변경된 폴더내의 css을 병합합니다.
 css:build | - | css 파일들을 각 폴더 이름으로 병합 합니다.
 css:dist | css:build | src내의 css 파일들을 각 폴더 이름으로 병합후에, dist폴더로 복사합니다.

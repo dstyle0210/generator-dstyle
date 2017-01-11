@@ -49,8 +49,7 @@ jspm_packages
 .yarn-integrity
 
 
-/src/
+/src/src
 .idea/
 node_modules/
-src/
 .idea/workspace.xml
