@@ -66,7 +66,7 @@ gulp.task("default",() => {
 
     run(buildTask,() =>{
         gutil.log("CSS PreParsher Compile Success.");
-        run("css:build",() =>{
+        run("css:concat",() =>{
             run(watchTask,() =>{
                 run("css");
                 gutil.log("Work Space Ready.");
@@ -97,8 +97,8 @@ gulp.task("scss:watch",() => { // SASS(scss) 컴파일 watch
     });
 });
 // TASK : CSS
-gulp.task("css",() => run("css:build","css:watch") );
-gulp.task("css:build",folders(resources.css,(folder) =>{
+gulp.task("css",() => run("css:concat","css:watch") );
+gulp.task("css:concat",folders(resources.css,(folder) =>{
     let base = resources.css;
     let dest = src.css;
     return gulp.src(resources.css+"/"+folder+"/*.css")
@@ -180,7 +180,7 @@ gulp.task("download",() => {
         gutil.log("JS라이브러리(jquery) 복사 완료.");
 
         setTimeout(() => {
-            run("less:build","scss:build","css:build",() => {
+            run("less:build","scss:build","css:concat",() => {
                 gutil.log("LESS , SCSS , CSS 컴파일 완료.");
             });
         },1000);

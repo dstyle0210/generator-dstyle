@@ -30,9 +30,8 @@ scss:watch | - | scss 파일의 변화를 추적하여 컴파일 합니다.
 scss:build | - | scss 파일들을 컴파일 합니다.
 css | css:build , css:watch | 각 폴더내의 css 파일들을 폴더이름으로 병합 하고, 변화를 감지합니다.
 css:watch | - | css 파일의 변화를 추적하여 변경된 폴더내의 css을 병합합니다.
-css:build | - | css 파일들을 각 폴더 이름으로 병합 합니다.
+css:concat | - | css 파일들을 각 폴더 이름으로 병합 합니다.
 css:dist | css:build | src내의 css 파일들을 각 폴더 이름으로 병합후에, dist폴더로 복사합니다.
-mkdir | - | 기본폴더구조를 생성합니다.
 
 ### 참고사항(Base Site)
 본 제너레이터는 dstyle이 만든 몇가지 사이트에서 기반소스를 다운받도록 설계되어 있습니다.
@@ -40,6 +39,9 @@ mkdir | - | 기본폴더구조를 생성합니다.
 - [gulp-setting](http://dstyle0210.github.io/gulp-setting/) : less , scss , css 컴파일 Task 
 - [jquery.myExtend](http://dstyle0210.github.io/jquery-myExtend/) : jquery 메소드 addOn 파일.
 - [resetcss-dstyle](http://dstyle0210.github.io/resetcss-dstyle/) : reset.css 파일 다운로드
+
+### 릴리즈노트
+[릴리즈노트](https://github.com/dstyle0210/generator-dstyle/blob/gh-pages/docs/RELEASE.md)
 
 ### Support or Contact
 본 파일이나. 오류사항이 있다면, [저에게](mailto:dstyle0210@gmail.com) 메일 보내주세요.
