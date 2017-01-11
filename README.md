@@ -16,7 +16,7 @@ Gulp 베이스로 실행됩니다.
 
 Task Name | Task Deps | Comment
 ------------ | -------------| -------------
-default | less , scss , css , js | 생성된 구조에서 CSS 및 Javascript의 변화를 추적하여 컴파일합니다.
+default | less , scss , css | 생성된 구조에서 CSS 및 Javascript의 변화를 추적하여 컴파일합니다.
 generator | generator:5 | 기본폴더구조를 생성하고, 샘플링된 소스를 다운로드 및 gulp에 필요한 파일을 다운받습니다. , generator:5 와 동일합니다.
 generator:5 | mkdirs | HTML5 을 기반으로 기본폴더 구조를 생성합니다.
 generator:xt | mkdirs | XHTML 1.0 을 기반으로 기본폴더 구조를 생성합니다.
