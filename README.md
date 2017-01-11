@@ -34,9 +34,10 @@ mkdir | - | 기본폴더구조를 생성합니다.
 
 ### 참고사항(Base Site)
 본 제너레이터는 dstyle이 만든 몇가지 사이트에서 기반소스를 다운받도록 설계되어 있습니다.
-- gulp-setting : less , scss , css 컴파일 Task 
-- jquery.myExtend : jquery 메소드 addOn 파일.
-- reset-dstyle : reset.css 파일 다운로드
+
+- [gulp-setting](http://dstyle0210.github.io/gulp-setting/) : less , scss , css 컴파일 Task 
+- [jquery.myExtend](http://dstyle0210.github.io/jquery-myExtend/) : jquery 메소드 addOn 파일.
+- [resetcss-dstyle](http://dstyle0210.github.io/resetcss-dstyle/) : reset.css 파일 다운로드
 
 ### Support or Contact
-본 파일이나. 오류사항이 있다면, [저에게](dstyle0210@gmail.com) 메일 보내주세요.
+본 파일이나. 오류사항이 있다면, [저에게](mailto:dstyle0210@gmail.com) 메일 보내주세요.
