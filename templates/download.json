@@ -1,4 +1,3 @@
-[
   {name:"jquery", url:"",dest:""},
   {name:"jquery-migrate", url:"",dest:""},
   {name:"jquery", url:"zen.json",dest:"./"},
@@ -10,5 +9,4 @@
   {name:"jquery", url:""},
   {name:"jquery", url:""},
   {name:"jquery", url:""},
-  {name:"jquery", url:""},
-]
+  {name:"jquery", url:""}
