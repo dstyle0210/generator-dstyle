@@ -1,4 +1,8 @@
 [
-  {"name":"zen", "url":"https://dstyle0210.github.io/generator-dstyle/templates/zen.json","dest":"./"},
-  {"name":"less-mixin", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.less","dest":resources.root+"mixin.less"}
+  {"name":"less-val", "url":"https://dstyle0210.github.io/generator-dstyle/templates/val.less","dest":"/resources/less/_lib/val.less"},
+  {"name":"less-mixin", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.less","dest":"/resources/less/_lib/mixin.less"},
+  {"name":"less-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/sample-less.less","dest":"/resources/less/sample/sample-less.less"},
+  {"name":"scss-val", "url":"https://dstyle0210.github.io/generator-dstyle/templates/val.scss","dest":"/resources/scss/_lib/val.scss"},
+  {"name":"scss-mixin", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.scss","dest":"/resources/scss/_lib/mixin.scss"},
+  {"name":"scss-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.scss","dest":"/resources/scss/sample/sample-scss.scss"}
 ]
