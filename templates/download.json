@@ -4,6 +4,10 @@
   {"name":"less-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/sample-less.less","dest":"/resources/less/sample/sample-less.less"},
   {"name":"scss-val", "url":"https://dstyle0210.github.io/generator-dstyle/templates/val.scss","dest":"/resources/scss/_lib/val.scss"},
   {"name":"scss-mixin", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.scss","dest":"/resources/scss/_lib/mixin.scss"},
-  {"name":"scss-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/sample-scss","dest":"/resources/scss/sample/sample-scss.scss"},
-  {"name":"reset-css", "url":"https://dstyle0210.github.io/generator-dstyle/templates/reset.css","dest":"/resources/css/reset.css"}
+  {"name":"scss-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/sample-scss.scss","dest":"/resources/scss/sample/sample-scss.scss"},
+  {"name":"reset-css", "url":"https://dstyle0210.github.io/generator-dstyle/templates/reset.css","dest":"/resources/css/reset.css"},
+  {"name":"html5", "url":"https://dstyle0210.github.io/generator-dstyle/templates/html5.html","dest":"/template.html"},
+  {"name":"xhtml", "url":"https://dstyle0210.github.io/generator-dstyle/templates/xhtml.html","dest":"/template.html"},
+  {"name":"jquery", "url":"https://code.jquery.com/jquery-3.1.1.min.js","dest":"/js/lib/jquery.min.js"},
+  {"name":"xhtml", "url":"https://code.jquery.com/jquery-migrate-3.0.0.min.js","dest":"/js/lib/jquery-migrate.min.js"}
 ]
