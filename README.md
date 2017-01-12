@@ -4,7 +4,7 @@
 Gulp 베이스로 실행됩니다.
 
 ### 필요프로그램
-- nodejs
+- [nodejs](https://nodejs.org)
 
 ### Install (npm)
 ```sh
@@ -38,7 +38,7 @@ css:dist | css:build | src내의 css 파일들을 각 폴더 이름으로 병합
 
 - [gulp-setting](http://dstyle0210.github.io/gulp-setting/) : less , scss , css 컴파일 Task 
 - [jquery.myExtend](http://dstyle0210.github.io/jquery-myExtend/) : jquery 메소드 addOn 파일.
-- [resetcss-dstyle](http://dstyle0210.github.io/resetcss-dstyle/) : reset.css 파일 다운로드
+- [resetcss-dstyle](http://dstyle0210.github.io/resetcss-dstyle/) : reset.css 파일
 
 ### 릴리즈노트
 [릴리즈노트](https://github.com/dstyle0210/generator-dstyle/blob/gh-pages/docs/RELEASE.md)  문서 참조

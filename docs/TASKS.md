@@ -1,10 +1,10 @@
 ## generator TASK API docs
 
 빠른이동:
-  [generator](#generator) |
-  [less](#less) |
-  [scss](#scss) |
-  [css](#css)
+  [Generator](#generator) |
+  [LESS](#less) |
+  [SASS(scss)](#scss) |
+  [CSS](#css)
 
 * 리소스폴더 : generator로 생성시 "src/resources"을 지칭합니다.
 
@@ -68,7 +68,7 @@ XHTML을 기반으로 하여 template.html 파일을 생성합니다. 기초 템
 
 
 
-### css
+### CSS
 ```
 > gulp css
 ```
