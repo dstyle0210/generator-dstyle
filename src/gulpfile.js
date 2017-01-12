@@ -112,6 +112,8 @@ gulp.task("css:watch", function () {
 // TASK : 리소스 폴더 생성
 gulp.task("mkdir",function(){
     fs.mkdir(src.root,function(){
+        mkdirp(src.css);
+        mkdirp(src.lib);
         mkdirp(resources.css);
         mkdirp(resources.less+"/_lib");
         mkdirp(resources.less+"/sample");
