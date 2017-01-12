@@ -1,3 +1,4 @@
 [
-  {"name":"jquery", "url":"","dest":""}
+  {"name":"zen", "url":"https://dstyle0210.github.io/generator-dstyle/templates/zen.json","dest":"./"},
+  {"name":"less-mixin", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.less","dest":resources.root+"mixin.less"}
 ]
