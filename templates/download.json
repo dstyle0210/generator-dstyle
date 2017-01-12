@@ -4,5 +4,6 @@
   {"name":"less-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/sample-less.less","dest":"/resources/less/sample/sample-less.less"},
   {"name":"scss-val", "url":"https://dstyle0210.github.io/generator-dstyle/templates/val.scss","dest":"/resources/scss/_lib/val.scss"},
   {"name":"scss-mixin", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.scss","dest":"/resources/scss/_lib/mixin.scss"},
-  {"name":"scss-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/mixin.scss","dest":"/resources/scss/sample/sample-scss.scss"}
+  {"name":"scss-sample", "url":"https://dstyle0210.github.io/generator-dstyle/templates/sample-scss","dest":"/resources/scss/sample/sample-scss.scss"},
+  {"name":"reset-css", "url":"https://dstyle0210.github.io/generator-dstyle/templates/reset.css","dest":"/resources/css/reset.css"}
 ]
