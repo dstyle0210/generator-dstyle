@@ -1,5 +1,5 @@
 /**
- * Generator-dstyle v1.0.0
+ * Generator-dstyle v1.0.1
  * @ahther 디스타일(마봉아빠 , dstyle0210@gmail.com)
  * @url : https://dstyle0210.github.io/generator-dstyle/
  * @blog : http://dstyleitsme.tistory.com
@@ -16,7 +16,7 @@ var request = require("request");
 var less = require("gulp-less");
 var sass = require("gulp-sass");
 var concat = require("gulp-concat");
-var uglify = require('gulp-uglify');
+// var uglify = require('gulp-uglify');
 var insert = require('gulp-insert');
 var folders = require('gulp-folders');
 var replace = require('gulp-replace');
@@ -44,6 +44,30 @@ var dist = { // 최종 산출물 폴더
     lib:"./dist/js/lib"
 };
 
+// TASK DEFAULT
+gulp.task("default",() => {
+    let buildTask = [];
+    let watchTask = [];
+    if(fs.existsSync(resources.less)){
+        buildTask.push("less:build");
+        watchTask.push("less");
+    };
+    if(fs.existsSync(resources.scss)){
+        buildTask.push("scss:build");
+        watchTask.push("scss");
+    };
+
+    run(buildTask,function(){
+        gutil.log("CSS PreParsher Compile Success.");
+        run("css:concat",() => {
+            run(watchTask,() => {
+                run("css",()=>{
+                    gutil.log("Work Space Ready.");
+                });
+            });
+        });
+    });
+});
 
 // TASK : GENERATOR
 gulp.task("generator",["generator:5"]);
@@ -86,16 +110,14 @@ gulp.task("scss:watch",function(){ // SASS(scss) 컴파일 watch
 // TASK : CSS
 gulp.task("css",["css:concat","css:watch"]);
 gulp.task("css:concat",folders(resources.css,function(folder){
-    var base = resources.css;
-    var dest = src.css;
     return gulp.src(resources.css+"/"+folder+"/*.css")
         .pipe(concat(folder+".css"))
         .pipe(replace('@charset "UTF-8";',''))
         .pipe(insert.prepend('@charset "UTF-8";\n'))
         .pipe(replace('/*!','\n/*!'))
         .pipe(replace(/[\n]{3}/g,"\n"))
-        .pipe(gulp.dest(base))
-        .pipe(gulp.dest(dest));
+        .pipe(gulp.dest(resources.css))
+        .pipe(gulp.dest(src.css));
 }));
 gulp.task("css:watch", function () {
     var ext = "css";
@@ -135,7 +157,8 @@ function resourceDownload(type){
         var data = JSON.parse(json);
         for(var res of data){
             if(res.name!=exceptName){
-                downloadPromise.push( download(res.url,devroot+res.dest) )
+                var dest = (res.name=="zen-json") ? "./zen.json" : devroot+res.dest;
+                downloadPromise.push( download( res.url, dest ) );
             };
         };
         Promise.all(downloadPromise).then(function(values){
