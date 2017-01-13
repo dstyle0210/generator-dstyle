@@ -130,6 +130,15 @@ gulp.task("css:watch", function () {
         };
     });
 });
+gulp.task("css:dist",["css:concat"], ()=>{
+    return gulp.src(src.css+"/*.css")
+     .pipe(gulp.dest(dist.css));
+});
+gulp.task("css:dist:min",["css:concat"], ()=>{
+    return gulp.src(src.css+"/*.css")
+        .pipe(csso())
+        .pipe(gulp.dest(dist.css));
+});
 
 // TASK : 리소스 폴더 생성
 gulp.task("mkdir",function(){

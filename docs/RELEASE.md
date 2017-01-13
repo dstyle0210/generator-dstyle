@@ -9,5 +9,8 @@
 - [delete] 현재 사용하지 않는 "uglify" 구문 삭제.
 - 기타 리팩토링
 
+#### 1.0.2
+- [add] "css:dist:min" Task 추가.
+
 
 
