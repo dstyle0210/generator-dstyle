@@ -1,5 +1,5 @@
 /**
- * Generator-dstyle v1.0.1
+ * Generator-dstyle v1.0.2
  * @ahther 디스타일(마봉아빠 , dstyle0210@gmail.com)
  * @url : https://dstyle0210.github.io/generator-dstyle/
  * @blog : http://dstyleitsme.tistory.com

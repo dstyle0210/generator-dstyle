@@ -1,5 +1,5 @@
 /**
- * Generator-dstyle v1.0.1
+ * Generator-dstyle v1.0.2
  * @ahther 디스타일(마봉아빠 , dstyle0210@gmail.com)
  * @url : https://dstyle0210.github.io/generator-dstyle/
  * @blog : http://dstyleitsme.tistory.com
@@ -129,6 +129,15 @@ gulp.task("css:watch", function () {
             gutil.log(getTimeStamp() + " [css] " + folder + ".css concat failed");
         };
     });
+});
+gulp.task("css:dist",["css:concat"], ()=>{
+    return gulp.src(src.css+"/*.css")
+     .pipe(gulp.dest(dist.css));
+});
+gulp.task("css:dist:min",["css:concat"], ()=>{
+    return gulp.src(src.css+"/*.css")
+        .pipe(csso())
+        .pipe(gulp.dest(dist.css));
 });
 
 // TASK : 리소스 폴더 생성
