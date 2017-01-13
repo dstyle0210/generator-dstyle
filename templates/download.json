@@ -9,5 +9,6 @@
   {"name":"html5", "url":"https://dstyle0210.github.io/generator-dstyle/templates/html5.html","dest":"/template.html"},
   {"name":"xhtml", "url":"https://dstyle0210.github.io/generator-dstyle/templates/xhtml.html","dest":"/template.html"},
   {"name":"jquery", "url":"https://code.jquery.com/jquery-3.1.1.min.js","dest":"/js/lib/jquery.min.js"},
-  {"name":"jquery-migrate", "url":"https://code.jquery.com/jquery-migrate-3.0.0.min.js","dest":"/js/lib/jquery-migrate.min.js"}
+  {"name":"jquery-migrate", "url":"https://code.jquery.com/jquery-migrate-3.0.0.min.js","dest":"/js/lib/jquery-migrate.min.js"},
+  {"name":"zen-json", "url":"https://dstyle0210.github.io/generator-dstyle/templates/zen.json","dest":"zen.json"}
 ]
